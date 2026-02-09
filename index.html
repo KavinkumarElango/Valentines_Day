@@ -146,11 +146,14 @@
     });
 
     yesBtn.addEventListener("click", () => {
+      document.getElementById("question").style.display = "none";
       document.querySelector(".buttons").style.display = "none";
+    
       result.style.display = "block";
       music.play();
       createHearts();
     });
+
 
     function createHearts() {
       setInterval(() => {
@@ -168,6 +171,7 @@
 
 </body>
 </html>
+
 
 
 
